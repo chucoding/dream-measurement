@@ -4,8 +4,6 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </main>
+    <main className="h-screen bg-gradient-to-b from-[#84A1B1] via-[#9C7E76] to-[#6C5873]"></main>
   );
 }
