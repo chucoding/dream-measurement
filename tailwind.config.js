@@ -11,9 +11,6 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-inter)", ...fontFamily.sans],
       },
-      screens: {
-        tall: { raw: "(min-height: 800px)" },
-      },
     },
   },
   plugins: [],
