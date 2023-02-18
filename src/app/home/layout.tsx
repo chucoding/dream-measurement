@@ -7,15 +7,11 @@ const getCount = () => {
 };
 
 const Title = (props: any) => {
-  return <h1>테스트 입니다.</h1>;
+  return <h1>꿈으로 알아보는 심리테스트</h1>;
 };
 
 const SubTitle = (props: any) => {
-  return (
-    <>
-      나만의 <b>성장 라이프</b>를 공유해주세요!
-    </>
-  );
+  return <h2>꿈 심리테스트 입니다.</h2>;
 };
 
 const Image = (props: any) => {
