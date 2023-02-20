@@ -1,5 +1,5 @@
 import { Inter } from "@next/font/google";
-import App from "./home/layout";
+import App from "../components/templates/home";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -10,8 +10,15 @@ export default function Main() {
   return (
     <main
       className={`
+        absolute
+        bg-[#FEF7E5]
+        min-w-full
+        min-h-full
+        w-full
         h-screen
-        bg-gradient-to-b from-[#84A1B1] via-[#9C7E76] to-[#6C5873]
+        overflow-hidden
+        justify-center
+        flex
         ${inter.variable} font-sans
       `}
     >
