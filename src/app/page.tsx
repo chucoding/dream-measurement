@@ -11,7 +11,7 @@ export default function Main() {
     <main
       className={`
         absolute
-        bg-[#FEF7E5]
+        bg-gradient-to-b from-[#D4DEDD] to-[#D8C7DA]
         min-w-full
         min-h-full
         w-full
