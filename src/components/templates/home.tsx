@@ -12,15 +12,15 @@ export default function App(props: any) {
   ) : (
     <div className="text-center w-[375px] h-full relative">
       <div className="w-full h-full absolute top-0 bottom-0">
-        <h1 className="text-4xl">꿈력 측정 테스트</h1>
-        <h2 className="text-2xl">...당신의 꿈력은 몇 %?</h2>
         <div className="inline-block text-center">
-          <div>
-            <img src="/cloud.png" alt="메인이미지" />
-          </div>
+          <h1 className="text-3xl absolute top-32 left-24">꿈력 측정 테스트</h1>
+          <h2 className="text-1xl absolute top-44 left-32">
+            ...당신의 꿈력은 몇 %?
+          </h2>
+          <img src="/cloud.png" alt="메인이미지" />
         </div>
         <button
-          className="bg-[#556EA5] hover:bg-[#6C86C3] text-white font-bold py-2 px-4 rounded-full"
+          className="bg-white hover:bg-[#808080] text-black font-bold py-2 px-12 rounded-full"
           onClick={() => setStart(true)}
         >
           테스트 시작하기
