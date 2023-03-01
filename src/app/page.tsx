@@ -20,6 +20,7 @@ export default function Main() {
         justify-center
         flex
         ${inter.variable} font-sans
+        p-10
       `}
     >
       <App />
