@@ -2,13 +2,13 @@
 
 import Button from "../atoms/button";
 
-export default function Card({ list }: any) {
+export default function Card({ list, page, setPage }: any) {
   return (
     <div>
-      <Button text={list[0]} />
-      <Button text={list[1]} />
-      <Button text={list[2]} />
-      <Button text={list[3]} />
+      {list &&
+        list.map((data: any, key: any) => {
+          return <Button key={key} text={data} page={page} setPage={setPage} />;
+        })}
     </div>
   );
 }

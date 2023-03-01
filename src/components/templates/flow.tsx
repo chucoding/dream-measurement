@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 export default function Flow(props: any) {
   const [tests, setTests] = useState([]);
+  const [page, setPage] = useState(0);
 
   useEffect(() => {
     fetch("/test.json")
@@ -18,14 +19,12 @@ export default function Flow(props: any) {
   return (
     <div className="text-center w-[375px] h-full relative">
       <div className="w-full h-full absolute top-0 bottom-0">
-        {tests.map((data: any, key: any) => {
-          return (
-            <div key={key}>
-              <TextCard text={data.text} />
-              <ButtonList list={data?.buttonList} />
-            </div>
-          );
-        })}
+        <TextCard text={tests && tests[page] && tests[page]["text"]} />
+        <ButtonList
+          list={tests && tests[page] && tests[page]["buttonList"]}
+          page={page}
+          setPage={setPage}
+        />
       </div>
     </div>
   );
