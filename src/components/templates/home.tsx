@@ -1,8 +1,6 @@
 "use client";
 import { useState } from "react";
 import Flow from "./flow";
-import CloudImage from "../../resources/cloud.png";
-import Image from "next/image";
 
 export default function App(props: any) {
   const [start, setStart] = useState(false);
