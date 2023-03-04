@@ -11,6 +11,15 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-inter)", ...fontFamily.sans],
       },
+      keyframes: {
+        fadein: {
+          "0%": { opacity: 0, transform: "translateY(20px)" },
+          "100%": { opacity: 1, transform: "none" },
+        },
+      },
+      animation: {
+        fadein: "fadein 7s ease-in-out",
+      },
     },
   },
   plugins: [],
