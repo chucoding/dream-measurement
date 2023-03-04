@@ -1,12 +1,12 @@
 "use client";
 import { useState } from "react";
-import Flow from "./flow";
+import OnBoarding from "./onboarding";
 
 export default function App(props: any) {
   const [start, setStart] = useState(false);
 
   return start ? (
-    <Flow />
+    <OnBoarding />
   ) : (
     <div className="text-center w-[375px] h-full relative">
       <div className="w-full h-full absolute top-0 bottom-0">
