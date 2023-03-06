@@ -8,22 +8,24 @@ export default function App(props: any) {
   return start ? (
     <OnBoarding />
   ) : (
-    <div className="text-center w-[375px] h-full relative">
-      <div className="w-full h-full absolute top-0 bottom-0">
-        <div className="inline-block text-center">
-          <h1 className="text-2xl absolute top-28 left-20">꿈력 측정 테스트</h1>
-          <h2 className="text-1xl absolute top-36 left-24">
-            ...당신의 꿈력은 몇 %?
-          </h2>
-          <img src="/cloud.png" alt="메인이미지" />
-        </div>
-        <button
-          className="bg-white hover:bg-[#808080] text-black font-bold py-2 px-12 rounded-full"
-          onClick={() => setStart(true)}
-        >
-          테스트 시작하기
-        </button>
+    <div>
+      <div className="inline-block text-center">
+        <img className="absolute right-2" src="/cloud.png" alt="메인이미지" />
+        <h1 className="text-2xl absolute top-32 left-16">꿈력 측정 테스트</h1>
+        <h2 className="text-1xl absolute top-40" style={{ left: "88px" }}>
+          당신의 꿈력은 몇 %?
+        </h2>
       </div>
+      <button
+        className="relative top-80 bg-white hover:bg-[#808080] text-black font-bold py-2 px-12 rounded-full"
+        onClick={() => setStart(true)}
+      >
+        테스트 시작하기
+        <br />
+      </button>
+      <p className="relative top-80 mt-2 text-gray-100 text-xs">
+        모바일 환경을 추천합니다.
+      </p>
     </div>
   );
 }

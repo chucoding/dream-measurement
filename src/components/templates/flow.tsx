@@ -1,9 +1,10 @@
 "use client";
 
-import QuestionCard from "../modules/questionCard";
+import CloudCard from "../modules/cloudCard";
 import ButtonList from "../modules/buttonList";
 import { useEffect, useState } from "react";
 import CountBadge from "../modules/countBadge";
+import ResultLoading from "./resultLoading";
 
 export default function Flow(props: any) {
   const [tests, setTests] = useState([]);
@@ -17,17 +18,17 @@ export default function Flow(props: any) {
       });
   }, []);
 
-  return (
-    <div className="text-center w-[375px] h-full relative">
-      <div className="w-full h-full absolute top-0 bottom-0">
-        <CountBadge count={page + 1} totalCount={tests.length} />
-        <QuestionCard text={tests && tests[page] && tests[page]["text"]} />
-        <ButtonList
-          list={tests && tests[page] && tests[page]["buttonList"]}
-          page={page}
-          setPage={setPage}
-        />
-      </div>
+  return page != 0 && page === tests.length ? (
+    <ResultLoading />
+  ) : (
+    <div>
+      <CloudCard text={tests && tests[page] && tests[page]["text"]} />
+      <ButtonList
+        list={tests && tests[page] && tests[page]["buttonList"]}
+        page={page}
+        setPage={setPage}
+      />
+      <CountBadge count={page + 1} totalCount={tests.length} />
     </div>
   );
 }
