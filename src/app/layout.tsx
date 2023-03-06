@@ -1,7 +1,4 @@
 import "./globals.css";
-import localFont from "@next/font/local";
-
-const myFont = localFont({ src: "/fonts/NanumSquareNeo-Variable.ttf" });
 
 export default function RootLayout({
   children,
@@ -9,8 +6,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko">
-      <head />
+    <html lang="ko" style={{ fontFamily: "MyFont" }}>
+      <head>
+        {" "}
+        <link rel="stylesheet" href="/fonts.css" />
+      </head>
       <body>
         <main
           className={`
@@ -24,7 +24,6 @@ export default function RootLayout({
         justify-center
         flex
         p-10
-        ${myFont.className}
       `}
         >
           <div className="text-center w-[375px] h-full relative">
