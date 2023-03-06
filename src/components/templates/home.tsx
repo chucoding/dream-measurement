@@ -28,8 +28,8 @@ export default function App(props: any) {
           테스트 시작하기
           <br />
         </button>
-        <p className=" mt-2 text-gray-100" style={{ fontSize: "18px" }}>
-          모바일 환경을 추천합니다.
+        <p className=" mt-1 text-gray-100" style={{ fontSize: "18px" }}>
+          모바일 환경을 추천합니다
         </p>
       </div>
     </>
