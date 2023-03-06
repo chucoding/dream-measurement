@@ -1,5 +1,3 @@
-const { fontFamily } = require("tailwindcss/defaultTheme");
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -8,9 +6,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ["var(--font-inter)", ...fontFamily.sans],
-      },
       keyframes: {
         fadein: {
           "0%": { opacity: 0, transform: "translateY(20px)" },
@@ -18,7 +13,7 @@ module.exports = {
         },
       },
       animation: {
-        fadein: "fadein 7s ease-in-out",
+        fadein: "fadein 2s ease-in-out",
       },
     },
   },
