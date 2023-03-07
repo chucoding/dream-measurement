@@ -13,7 +13,7 @@ export default function App(props: any) {
         <CloudCardBig>
           <div className="absolute top-[40%] left-[30%]">
             <h1 className="text-5xl font-black">꿈력 측정 테스트</h1>
-            <h2 className="text-2xl absolute mt-2 left-[30%]">
+            <h2 className="text-2xl absolute mt-2 left-[20%]">
               당신의 꿈력은 몇 %?
             </h2>
           </div>
