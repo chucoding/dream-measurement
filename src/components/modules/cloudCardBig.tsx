@@ -1,8 +1,5 @@
 "use client";
-export default function CloudCardWrapper({
-  children,
-  runAnimate = false,
-}: any) {
+export default function CloudCardBig({ children, runAnimate = false }: any) {
   return (
     <div
       className={`bg-[url('/cloud.png')] bg-cover
