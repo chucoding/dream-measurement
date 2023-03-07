@@ -8,7 +8,7 @@ export default function CloudCard({ text, runAnimate = false }: any) {
       key={text}
     >
       <div className="text-center absolute w-48 top-6 left-24">
-        <p className="flex justify-center items-center h-60 font-black">
+        <p className="flex justify-center items-center h-60 font-black text-2xl">
           {text}
         </p>
       </div>
