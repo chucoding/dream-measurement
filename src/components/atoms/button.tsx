@@ -1,12 +1,21 @@
 "use client";
 
-export default function Button({ text, page, setPage }: any) {
+export default function Button({
+  data,
+  page,
+  setPage,
+  setScore,
+  setScoreList,
+}: any) {
   return (
     <button
-      className="mt-3 min-h-14 rounded-lg border w-full h-full p-2"
-      onClick={() => setPage(page + 1)}
+      className="mt-3 min-h-[60px] text-2xl rounded-lg border w-full h-full p-2"
+      onClick={() => {
+        setPage(page + 1);
+        setScoreList((list: any) => [...list, data?.score]);
+      }}
     >
-      {text}
+      {data?.text}
     </button>
   );
 }

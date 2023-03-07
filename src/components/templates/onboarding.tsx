@@ -2,13 +2,13 @@
 
 import { useState } from "react";
 import CloudCardBig from "../modules/cloudCardBig";
-import Flow from "./flow";
+import Scenario from "./scenario";
 
 export default function OnBoarding(props: any) {
   const [next, setNext] = useState(false);
 
   return next ? (
-    <Flow />
+    <Scenario setNext={setNext} />
   ) : (
     <div>
       <CloudCardBig>
