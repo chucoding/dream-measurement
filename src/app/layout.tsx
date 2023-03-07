@@ -1,5 +1,10 @@
 import "./globals.css";
-
+/**
+ * MyFont left-30
+ * Dovemayo_gothic left-23
+ * KCCChassam left-23
+ * Humanbumsuk left-25
+ */
 export default function RootLayout({
   children,
 }: {
