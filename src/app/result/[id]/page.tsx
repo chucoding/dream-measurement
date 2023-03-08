@@ -1,6 +1,5 @@
 "use client";
 
-import CloudCard from "@/components/modules/cloudCard";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 

@@ -7,7 +7,12 @@ export default function ResultLoading({ scoreList }: any) {
   const router = useRouter();
 
   useEffect(() => {
-    setTimeout(() => router.push("/result/1"), 3000);
+    let sum = 0;
+    for (let score of scoreList) {
+      sum += score;
+    }
+    const average = Math.floor(sum / scoreList.length);
+    setTimeout(() => router.push(`result/1?score=${average}`), 3000);
   }, []);
 
   return (
