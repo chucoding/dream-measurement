@@ -1,8 +1,9 @@
 "use client";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
+import CloudCardBig from "../modules/cloudCardBig";
 
-export default function ResultLoading(props: any) {
+export default function ResultLoading({ scoreList }: any) {
   const router = useRouter();
 
   useEffect(() => {
@@ -11,8 +12,11 @@ export default function ResultLoading(props: any) {
 
   return (
     <div>
-      <h1 className="text-2xl absolute top-28 left-20">꿈력 측정중...</h1>
-      <img src="/cloud.png" alt="메인이미지" />
+      <CloudCardBig>
+        <h1 className="text-5xl font-black absolute top-[40%] left-[30%]">
+          꿈력 측정중...
+        </h1>
+      </CloudCardBig>
     </div>
   );
 }
