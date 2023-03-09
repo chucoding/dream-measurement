@@ -4,7 +4,7 @@ import CloudCard from "../modules/cloudCard";
 import ButtonList from "../modules/buttonList";
 import { useEffect, useState } from "react";
 import CountBadge from "../modules/countBadge";
-import ResultLoading from "./resultLoading";
+import ResultCarculator from "./resultCarculator";
 
 export default function Scenario({ setNext }: any) {
   const [list, setList] = useState([]);
@@ -21,7 +21,7 @@ export default function Scenario({ setNext }: any) {
   console.log(scoreList);
 
   return page != 0 && page === list.length ? (
-    <ResultLoading scoreList={scoreList} />
+    <ResultCarculator scoreList={scoreList} />
   ) : (
     <div>
       <button
