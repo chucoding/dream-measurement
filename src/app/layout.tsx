@@ -13,7 +13,6 @@ export default function RootLayout({
   return (
     <html lang="ko" style={{ fontFamily: "MyFont" }}>
       <head>
-        {" "}
         <link rel="stylesheet" href="/fonts.css" />
       </head>
       <body>
@@ -25,7 +24,7 @@ export default function RootLayout({
         min-h-full
         w-full
         h-full
-        overflow-hidden
+        overflow-auto
         justify-center
         flex
         p-10
