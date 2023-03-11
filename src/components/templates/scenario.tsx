@@ -36,7 +36,10 @@ export default function Scenario({ setNext }: any) {
           }
         }}
       />
-      <CloudCard text={list && list[page] && list[page]["text"]} />
+      <CloudCard
+        text={list && list[page] && list[page]["text"]}
+        style={list && list[page] && list[page]["style"]}
+      />
       <ButtonList
         list={list && list[page] && list[page]["buttonList"]}
         page={page}

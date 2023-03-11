@@ -18,9 +18,11 @@ export default function ResultLoading({ scoreList }: any) {
   return (
     <div>
       <CloudCardBig>
-        <h1 className="text-5xl font-black absolute top-[40%] left-[30%]">
-          꿈력 측정중...
-        </h1>
+        <div className="flex justify-center">
+          <h1 className="text-5xl font-black absolute top-[40%] left-[35%]">
+            꿈력 측정 중
+          </h1>
+        </div>
       </CloudCardBig>
     </div>
   );
