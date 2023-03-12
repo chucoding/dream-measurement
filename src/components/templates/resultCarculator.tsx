@@ -12,15 +12,16 @@ export default function ResultLoading({ scoreList }: any) {
       sum += score;
     }
     const average = Math.floor(sum / scoreList.length);
-    setTimeout(() => router.push(`result/${average}`), 3000);
+    setTimeout(() => router.push(`result/${average}`), 300);
+    //for ()
   }, []);
 
   return (
     <div>
       <CloudCardBig>
         <div className="flex justify-center">
-          <h1 className="text-[60px] font-black absolute top-[150px] left-[110px]">
-            꿈력 측정 중
+          <h1 className="text-[45px] font-medium absolute top-[150px] left-[115px] tracking-[-2px]">
+            꿈력 충전 중...💤
           </h1>
         </div>
       </CloudCardBig>

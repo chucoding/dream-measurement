@@ -8,7 +8,7 @@ export default function CloudCard({ text, style, runAnimate = false }: any) {
       key={text}
     >
       <div className="text-center absolute w-[250px] top-[25px] left-[70px]">
-        <div className="flex justify-center items-center h-[250px] font-black text-[30px]">
+        <div className="flex justify-center items-center h-[250px] font-medium text-[30px] leading-[30px]">
           <p style={style}>
             {text?.split("\n").map((line: any, key: any) => {
               return (
