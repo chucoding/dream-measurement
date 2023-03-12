@@ -37,17 +37,14 @@ export default function Result() {
 
   return loading ? (
     <div>
-      <p className="text-5xl font-black mt-14">
-        당신의 꿈력이
-        <br />
-        {score}% 충전되었습니다
-      </p>
-      <div className="p-10">
-        <Heart percent={score} size={150} color={"#DA7777"} />
+      <p className="text-[30px] font-black mt-[40px]">당신의 꿈력이</p>
+      <p className="text-[50px] font-black">{score}% 충전되었습니다</p>
+      <div className="pt-[15px] pb-[10px]">
+        <Heart percent={score} size={200} color={"#DA7777"} />
       </div>
-      <div className="bg-white rounded-md	p-2 m-2">
-        <b className="text-2xl">{data.title}</b>
-        <p className="p-2 text-2xl">
+      <div className="bg-white rounded-md	p-[5px] m-[5px]">
+        <b className="text-[23px]">{data.title}</b>
+        <p className="p-[5px] text-[20px]">
           {data.description.split("\n").map((line, key) => {
             return (
               <span key={key}>
@@ -58,11 +55,11 @@ export default function Result() {
           })}
         </p>
       </div>
-      <div className="bg-white rounded-md	p-2 m-2">
-        <p className="p-2 flex flex-start font-black text-2xl">
+      <div className="bg-white rounded-md	p-[5px] m-[5px]">
+        <p className="p-[5px] flex flex-start font-black text-[23px]">
           💤당신을 위한 드림 팁
         </p>
-        <p className="p-2 text-2xl">{data.tip}</p>
+        <p className="p-[5px] text-[20px]">{data.tip}</p>
       </div>
       <br />
       <br />

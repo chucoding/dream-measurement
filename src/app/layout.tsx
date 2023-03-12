@@ -11,7 +11,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko" style={{ fontFamily: "MyFont" }}>
+    <html lang="ko" style={{ fontFamily: "GangwonEdu_OTFBoldA" }}>
       <head>
         <link rel="stylesheet" href="/fonts.css" />
       </head>
@@ -27,7 +27,6 @@ export default function RootLayout({
         overflow-auto
         justify-center
         flex
-        p-10
       `}
         >
           <div className="text-center w-[375px] h-full relative">

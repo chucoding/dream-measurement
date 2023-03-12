@@ -23,9 +23,9 @@ export default function Scenario({ setNext }: any) {
   return page != 0 && page === list.length ? (
     <ResultCarculator scoreList={scoreList} />
   ) : (
-    <div>
+    <div className="p-[30px]">
       <button
-        className={`bg-[url('/reply.png')] bg-cover h-[30px] w-[30px] absolute z-10 left-0`}
+        className={`bg-[url('/reply.png')] bg-cover h-[30px] w-[30px] absolute z-10 left-[10px]`}
         onClick={() => {
           if (page === 0) {
             setNext(false);

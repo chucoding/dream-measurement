@@ -2,13 +2,13 @@
 export default function CloudCard({ text, style, runAnimate = false }: any) {
   return (
     <div
-      className={`bg-[url('/cloud.png')] bg-cover h-[280px] w-[350px] relative right-10 bottom-10 ${
+      className={`bg-[url('/cloud.png')] bg-cover h-[280px] w-[350px] relative right-[40px] bottom-[25px] ${
         runAnimate ? "animate-fadein" : ""
       }`}
       key={text}
     >
-      <div className="text-center absolute w-48 top-6 left-24">
-        <div className="flex justify-center items-center h-60 font-black text-3xl">
+      <div className="text-center absolute w-[250px] top-[25px] left-[70px]">
+        <div className="flex justify-center items-center h-[250px] font-black text-[30px]">
           <p style={style}>
             {text?.split("\n").map((line: any, key: any) => {
               return (
