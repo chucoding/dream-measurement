@@ -39,6 +39,22 @@ export default function RootLayout({
             <div className="w-full h-full absolute top-0 bottom-0 align-middle">
               {children}
             </div>
+            {/*
+            <footer className="absolute bottom-0 right-0 text-right">
+              <div className="text-white text-[14px]">
+                <p>기획자 : 선예지 | 개발자 : 서현석</p>
+                <p>
+                  <a href="https://www.swygbro.com/" target="_blank">
+                    Prod By. SWYG
+                  </a>
+                </p>
+              </div>
+              <div className="text-gray-100 text-[12px]">
+                <p>Copyright(C) 꿈력 측정 테스트</p>
+                <p>All Rights Reserved.</p>
+              </div>
+            </footer>
+            */}
           </div>
         </main>
       </body>
