@@ -22,10 +22,6 @@ export default function Head() {
       <meta name="twitter:type" content="website" />
       <meta name="twitter:url" content={url} />
       <meta name="twitter:image" content={thumbnail}></meta>
-      <script
-        defer
-        src="https://cdn.swygbro.com/public/widget/swyg-widget.js"
-      ></script>
       <link rel="icon" href="/favicon.ico" />
       <link rel="apple-touch-icon" href={thumbnail} />
       <link rel="shortcut icon" href={thumbnail} />

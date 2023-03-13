@@ -13,7 +13,6 @@ export default function ResultLoading({ scoreList }: any) {
     }
     const average = Math.floor(sum / scoreList.length);
     setTimeout(() => router.push(`result/${average}`), 300);
-    //for ()
   }, []);
 
   return (

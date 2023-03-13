@@ -1,4 +1,5 @@
 import "./globals.css";
+import Head from "./head";
 /**
  * MyFont left-30
  * Dovemayo_gothic left-23
@@ -13,7 +14,12 @@ export default function RootLayout({
   return (
     <html lang="ko" style={{ fontFamily: "GangwonEdu_OTFBoldA" }}>
       <head>
+        <Head />
         <link rel="stylesheet" href="/fonts.css" />
+        <script
+          defer
+          src="https://cdn.swygbro.com/public/widget/swyg-widget.js"
+        ></script>
       </head>
       <body>
         <main
