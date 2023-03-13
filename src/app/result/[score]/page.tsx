@@ -1,12 +1,11 @@
 "use client";
 
-import { usePathname, redirect, useRouter } from "next/navigation";
+import { usePathname, redirect } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Heart } from "@brightlayer-ui/react-progress-icons";
 
 export default function Result() {
-  const [loading, setLoading] = useState(false);
-  const router = useRouter();
+  const [wait, setWait] = useState(true);
   const [data, setData] = useState({
     title: "",
     description: "",
@@ -31,12 +30,13 @@ export default function Result() {
         } else if (score >= 86 && score < 101) {
           setData(data[3]);
         }
-
-        setLoading(true);
+        setWait(false);
       });
   }, []);
 
-  return loading ? (
+  return wait ? (
+    <></>
+  ) : (
     <div>
       <p className="text-[30px] font-black mt-[40px]">당신의 꿈력이</p>
       <p className="text-[45px] font-black">
@@ -77,7 +77,7 @@ export default function Result() {
       </div>
       <button
         className="bg-white hover:bg-[#808080] font-medium py-[10px] px-[35px] mt-[10px] rounded-full text-[25px]"
-        onClick={() => router.push(`/`)}
+        onClick={() => redirect(`/`)}
       >
         테스트 다시하기
       </button>
@@ -85,7 +85,5 @@ export default function Result() {
       <br />
       <br />
     </div>
-  ) : (
-    <></>
   );
 }

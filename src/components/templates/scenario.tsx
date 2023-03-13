@@ -18,8 +18,6 @@ export default function Scenario({ setNext }: any) {
       });
   }, []);
 
-  console.log(scoreList);
-
   return page != 0 && page === list.length ? (
     <ResultCarculator scoreList={scoreList} />
   ) : (
