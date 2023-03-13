@@ -1,10 +1,11 @@
 "use client";
 
-import { usePathname, redirect } from "next/navigation";
+import { usePathname, redirect, useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Heart } from "@brightlayer-ui/react-progress-icons";
 
 export default function Result() {
+  const router = useRouter();
   const [wait, setWait] = useState(true);
   const [data, setData] = useState({
     title: "",
@@ -77,7 +78,7 @@ export default function Result() {
       </div>
       <button
         className="bg-white hover:bg-[#808080] font-medium py-[10px] px-[35px] mt-[10px] rounded-full text-[25px]"
-        onClick={() => redirect(`/`)}
+        onClick={() => router.push("/")}
       >
         테스트 다시하기
       </button>
