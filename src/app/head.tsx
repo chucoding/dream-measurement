@@ -1,6 +1,7 @@
 export default function Head() {
   const title = "꿈력 측정 테스트";
-  const description = "나의 꿈력은 얼마? 지금 바로 당신의 꿈력을 측정해보세요.";
+  const description =
+    "꿈을 꾸는 환경, 꿈의 내용에 따라 그에 맞는 꿈력 분석을 제공하는 테스트 유형의 서비스입니다. ";
   const url = "https://dream.swygbro.com";
   const thumbnail = `${url}/thumbnail.png`;
 
