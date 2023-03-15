@@ -14,7 +14,6 @@
 
 <div align=left>
   <img src="https://img.shields.io/badge/react v18-61DAFB?style=for-the-badge&logo=react&logoColor=black"> 
-  <img src="https://img.shields.io/badge/axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white">
 </div>
 <br>
 
