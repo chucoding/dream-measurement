@@ -19,7 +19,7 @@ export default function Result() {
   }
 
   useEffect(() => {
-    fetch("/result.json")
+    fetch("/api/result.json")
       .then((response) => response.json())
       .then((data) => {
         if (score >= 40 && score < 56) {
