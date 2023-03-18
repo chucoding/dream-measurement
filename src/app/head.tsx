@@ -3,7 +3,7 @@ export default function Head() {
   const description =
     "꿈을 꾸는 환경, 꿈의 내용에 따라 그에 맞는 꿈력 분석을 제공하는 테스트 유형의 서비스입니다. ";
   const url = "https://dream.swygbro.com";
-  const thumbnail = `${url}/thumbnail.png`;
+  const thumbnail = `${url}/img/thumbnail.png`;
 
   return (
     <>

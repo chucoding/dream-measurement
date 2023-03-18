@@ -11,19 +11,18 @@ export default function Scenario({ setNext }: any) {
   const [page, setPage] = useState(0);
   const [scoreList, setScoreList] = useState([]);
   useEffect(() => {
-    fetch("/test.json")
+    fetch("/api/scenario.json")
       .then((response) => response.json())
       .then((data) => {
         setList(data);
       });
   }, []);
-
   return page != 0 && page === list.length ? (
     <ResultCarculator scoreList={scoreList} />
   ) : (
     <div className="p-[30px]">
       <button
-        className={`bg-[url('/reply.png')] bg-cover h-[30px] w-[30px] absolute z-10 left-[10px]`}
+        className={`bg-[url('/img/reply.png')] bg-cover h-[30px] w-[30px] absolute z-10 left-[10px]`}
         onClick={() => {
           if (page === 0) {
             setNext(false);

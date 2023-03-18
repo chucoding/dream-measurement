@@ -1,11 +1,7 @@
 import "./globals.css";
 import Head from "./head";
-/**
- * MyFont left-30
- * Dovemayo_gothic left-23
- * KCCChassam left-23
- * Humanbumsuk left-25
- */
+import Script from "next/script";
+
 export default function RootLayout({
   children,
 }: {
@@ -16,10 +12,10 @@ export default function RootLayout({
       <head>
         <Head />
         <link rel="stylesheet" href="/fonts.css" />
-        <script
+        <Script
           defer
           src="https://cdn.swygbro.com/public/widget/swyg-widget.js"
-        ></script>
+        ></Script>
       </head>
       <body>
         <main
@@ -39,22 +35,24 @@ export default function RootLayout({
             <div className="w-full h-full absolute top-0 bottom-0 align-middle">
               {children}
             </div>
-            {/*
-            <footer className="absolute bottom-0 right-0 text-right">
-              <div className="text-white text-[14px]">
-                <p>기획자 : 선예지 | 개발자 : 서현석</p>
-                <p>
-                  <a href="https://www.swygbro.com/" target="_blank">
-                    Prod By. SWYG
-                  </a>
-                </p>
-              </div>
-              <div className="text-gray-100 text-[12px]">
-                <p>Copyright(C) 꿈력 측정 테스트</p>
-                <p>All Rights Reserved.</p>
-              </div>
-            </footer>
-            */}
+            <div style={{ textAlign: "center" }}>
+              <Script
+                async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1919598055512436"
+                crossOrigin="anonymous"
+              ></Script>
+              <ins
+                className="adsbygoogle"
+                style={{
+                  display: "inline-block",
+                  width: "120px",
+                  height: "50px",
+                }}
+                data-ad-client="ca-pub-1919598055512436"
+                data-ad-slot="9317183248"
+              ></ins>
+              <Script>{`(adsbygoogle = window.adsbygoogle || []).push({});`}</Script>
+            </div>
           </div>
         </main>
       </body>

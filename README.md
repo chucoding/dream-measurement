@@ -1,6 +1,6 @@
 <p align="center">
   <br>
-  <img src="./public/thumbnail.png">
+  <img src="./public/img/thumbnail.png">
   <br>
 </p>
 

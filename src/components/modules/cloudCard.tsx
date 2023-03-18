@@ -2,7 +2,7 @@
 export default function CloudCard({ text, style, runAnimate = false }: any) {
   return (
     <div
-      className={`bg-[url('/cloud.png')] bg-cover h-[280px] w-[350px] relative right-[40px] bottom-[25px] ${
+      className={`bg-[url('/img/cloud.png')] bg-cover h-[280px] w-[350px] relative right-[40px] bottom-[25px] ${
         runAnimate ? "animate-fadein" : ""
       }`}
       key={text}
