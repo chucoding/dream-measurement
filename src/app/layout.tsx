@@ -11,7 +11,6 @@ export default function RootLayout({
     <html lang="ko" style={{ fontFamily: "GangwonEdu_OTFBoldA" }}>
       <head>
         <Head />
-        <link rel="stylesheet" href="/fonts.css" />
         <Script
           defer
           src="https://cdn.swygbro.com/public/widget/swyg-widget.js"
