@@ -50,7 +50,7 @@ export default function RootLayout({
                 data-ad-client="ca-pub-1919598055512436"
                 data-ad-slot="9317183248"
               ></ins>
-              <Script>{`(adsbygoogle = window.adsbygoogle || []).push({});`}</Script>
+              <Script id="adsbygoogle">{`(adsbygoogle = window.adsbygoogle || []).push({});`}</Script>
             </div>
           </div>
         </main>
