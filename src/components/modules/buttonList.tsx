@@ -3,6 +3,11 @@
 import Button from "../atoms/button";
 
 export default function Card({ list, page, setPage, setScoreList }: any) {
+  const moveNext = (score: any) => {
+    setPage(page + 1);
+    setScoreList((list: any) => [...list, score]);
+  };
+
   return (
     <div className="animate-fadein" key={page}>
       {list &&
@@ -10,10 +15,8 @@ export default function Card({ list, page, setPage, setScoreList }: any) {
           return (
             <Button
               key={key}
-              data={data}
-              page={page}
-              setPage={setPage}
-              setScoreList={setScoreList}
+              text={data?.text}
+              onClick={() => moveNext(data?.score)}
             />
           );
         })}

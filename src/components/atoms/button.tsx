@@ -1,15 +1,12 @@
 "use client";
 
-export default function Button({ data, page, setPage, setScoreList }: any) {
+export default function Button({ text, onClick }: any) {
   return (
     <button
       className="mt-3 min-h-[60px] text-2xl rounded-lg border w-full h-full p-2"
-      onClick={() => {
-        setPage(page + 1);
-        setScoreList((list: any) => [...list, data?.score]);
-      }}
+      onClick={onClick}
     >
-      {data?.text?.split("\n").map((line: any, key: any) => {
+      {text?.split("\n").map((line: any, key: any) => {
         return (
           <span className="" key={key}>
             {line}
