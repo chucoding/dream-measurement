@@ -1,15 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import CloudCardBig from "../modules/cloudCardBig";
-import Scenario from "./scenario";
 
-export default function OnBoarding(props: any) {
-  const [next, setNext] = useState(false);
-
-  return next ? (
-    <Scenario setNext={setNext} />
-  ) : (
+export default function OnBoarding({ setRoute }: any) {
+  return (
     <div>
       <CloudCardBig>
         <h2 className="text-[23px] absolute mt-[35px] left-[110px]">
@@ -23,7 +17,7 @@ export default function OnBoarding(props: any) {
       </CloudCardBig>
       <button
         className="absolute top-[70%] animate-pulse text-gray-100"
-        onClick={() => setNext(true)}
+        onClick={() => setRoute("scenario")}
       >
         ▶
       </button>

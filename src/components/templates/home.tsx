@@ -1,13 +1,8 @@
 "use client";
-import { useState } from "react";
 import CloudCardBig from "../modules/cloudCardBig";
-import OnBoarding from "./onboarding";
 
-export default function App(props: any) {
-  const [start, setStart] = useState(false);
-  return start ? (
-    <OnBoarding />
-  ) : (
+export default function Home({ setRoute }: any) {
+  return (
     <>
       <div
         className="inline-block text-center"
@@ -27,7 +22,7 @@ export default function App(props: any) {
       <div className="relative top-[70%]" style={{ fontFamily: "KCCChassam" }}>
         <button
           className="bg-white hover:bg-[#808080] text-black font-bold py-[10px] px-[35px] rounded-full text-[20px]"
-          onClick={() => setStart(true)}
+          onClick={() => setRoute("onboarding")}
         >
           테스트 시작하기
           <br />
